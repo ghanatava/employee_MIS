@@ -128,8 +128,8 @@ def check_branch():
         menu()
 def check_branch_manager():
     branch=int(input('enter branch id:'))
-    if branch not in [1,2,3,4]:
-        print('invalid branch id ,choose from 1,2,3,4 only.')
+    if branch not in [1,2,3]:
+        print('invalid branch id ,choose from 1,2,3 only.')
         menu()
     else:
         c.execute('select mgr_id from branch where branch_id=%s',(branch,))
