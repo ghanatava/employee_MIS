@@ -1,6 +1,6 @@
 from datetime import *
 from mysql.connector import *
-mydb=connect(host='localhost',user='root',passwd='kali',database='company')
+mydb=connect(host='localhost',user='',passwd='',database='company')
 c=mydb.cursor()
 def check_employee():
     employee_id= int(input('enter the id of employee:'))
